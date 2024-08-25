@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOGO Offer Card</title>
+</head>
+
+<body>
+    <div class="offer-container">
+        <h1>YAY! It’s BOGO</h1>
+        <!-- First Offer -->
+        <div class="offer-card" id="offer1" onclick="selectOffer(18, 'offer1')">
+            <div id="offer-badge1" class="offer-badge">30%<br>Off</div>
+            <div class="offer-content">
+                <input type="radio" id="offer1" name="offer">
+                <label for="offer1">
+                    <div class="offer-title">Buy 1 Get 2</div>
+                    <div class="offer-price">$18.00 USD</div>
+                </label>
+            </div>
+        </div>
+        <!-- Second Offer -->
+        <div class="offer-card" id="offer2" onclick="selectOffer(24, 'offer2')">
+            <div id="offer-badge2" class="offer-badge">30%<br>Off</div>
+            <div class="offer-content">
+                <input type="radio" id="offer2" name="offer">
+                <label for="offer2">
+                    <div class="offer-title">Buy 2 Get 4</div>
+                    <div class="offer-price">$24.00 USD</div>
+                </label>
+                <div class="most-popular">Most Popular</div>
+            </div>
+        </div>
+        <!-- Third Offer -->
+        <div class="offer-card" id="offer3" onclick="selectOffer(36, 'offer3')">
+            <div id="offer-badge3" class="offer-badge">30%<br>Off</div>
+            <div class="offer-content">
+                <input type="radio" id="offer3" name="offer">
+                <label for="offer3">
+                    <div class="offer-title">Buy 3 Get 6</div>
+                    <div class="offer-price">$18.00 USD</div>
+                </label>
+            </div>
+        </div>
+
+        <!-- Size and Color Section, Initially Hidden -->
+        <div id="size-color-selection" class="size-color">
+            <div class="size">
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <label for="size">Size</label>
+                <select id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div color="colour">
+                <label for="color">Colour</label>
+                <select id="color">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                </select>
+                <label for="color">Colour</label>
+                <select id="color">
+                    <option value="colour">Colour</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                </select>
+            </div>
+        </div>
+        <div class="total-price">
+            <div class="free-delivery">Free Delivery</div>
+            <div class="total">Total: $<span id="totalPrice">18.00</span> USD</div>
+        </div>
+
+        <button class="add-to-cart">+ Add to Cart</button>
+        <div class="text-footer">Powered by Pumper</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
